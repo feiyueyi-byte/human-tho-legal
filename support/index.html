@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Human, tho — Support</title>
+<style>
+  :root {
+    --bg: #FBEAE6;
+    --card: #FFFFFF;
+    --ink: #29211F;
+    --dim: #8C7B77;
+    --line: #EBD9D3;
+    --accent: #C0392B;
+    --accent-soft: #F7E1DC;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1A1210;
+      --card: #241813;
+      --ink: #F5EAE6;
+      --dim: #B8A39C;
+      --line: #3A2823;
+      --accent: #E2604A;
+      --accent-soft: #34211C;
+      color-scheme: dark;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Work Sans', system-ui, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 0 80px;
+  }
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(30px, 6vw, 40px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  .lede {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 16px 0 40px;
+    max-width: 54ch;
+  }
+  .contact-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin: 0 0 44px;
+  }
+  .contact-card .card-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .contact-card .email {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 17px;
+  }
+  .contact-card .email a { color: var(--ink); text-decoration-color: var(--accent); }
+  .contact-card p { margin: 8px 0 0; font-size: 14px; color: var(--dim); line-height: 1.6; }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 20px;
+  }
+  .faq { display: grid; gap: 10px; margin-bottom: 12px; }
+  details.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px 20px;
+  }
+  details.card summary {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 16.5px;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  details.card summary::-webkit-details-marker { display: none; }
+  details.card summary::after {
+    content: '+';
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--accent);
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  details.card[open] summary::after { content: '–'; }
+  details.card p {
+    margin: 12px 0 0;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--dim);
+    max-width: 56ch;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 44px 0 32px;
+  }
+  footer {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--dim);
+  }
+  footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="kicker">Support</div>
+    <h1>Human, tho</h1>
+    <p class="lede">Questions, a bug you hit, something that felt off — this is where to bring it.</p>
+
+    <div class="contact-card">
+      <div class="card-label">Contact</div>
+      <div class="email"><a href="mailto:feiyueyi@gmail.com">feiyueyi@gmail.com</a></div>
+      <p>Usually hear back within a couple of days. Tell me what device and what happened, and I'll dig in.</p>
+    </div>
+
+    <h2>Common questions</h2>
+    <div class="faq">
+      <details class="card">
+        <summary>How do I record a journal entry?</summary>
+        <p>Open the Journal tab and tap the record button. Talk for as long as you'd like, then stop — you'll get a chance to rate your day and save it.</p>
+      </details>
+      <details class="card">
+        <summary>My entry didn't turn into text automatically — is that normal?</summary>
+        <p>Automatic transcription isn't available in every build yet. If it doesn't appear, you can always type your entry directly into the text box that shows up after recording — the audio itself is still saved either way.</p>
+      </details>
+      <details class="card">
+        <summary>Where is my data stored?</summary>
+        <p>On your device. Recordings, entries, and your streak all live locally — see the <a href="../">Privacy Policy</a> for the full picture.</p>
+      </details>
+      <details class="card">
+        <summary>How do I delete an entry?</summary>
+        <p>Open the entry from your journal list, then use the delete option there. This removes it and its recording from your device.</p>
+      </details>
+      <details class="card">
+        <summary>What is Our Planet?</summary>
+        <p>A place to share one small, ordinary thing anonymously, and read what other people are noticing right now. Anything you share is visible for 24 hours unless you choose to keep it.</p>
+      </details>
+      <details class="card">
+        <summary>Something's broken — what should I include when I email you?</summary>
+        <p>What you were doing, what you expected, what happened instead, and your device model + iOS version if you have it. Screenshots help a lot.</p>
+      </details>
+    </div>
+
+    <hr>
+    <footer>Human, tho — com.humantho.app · <a href="../">Privacy Policy</a></footer>
+  </div>
+</body>
+</html>

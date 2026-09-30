@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Human, tho — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #FBEAE6;
+    --card: #FFFFFF;
+    --ink: #29211F;
+    --dim: #8C7B77;
+    --line: #EBD9D3;
+    --accent: #C0392B;
+    --accent-soft: #F7E1DC;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1A1210;
+      --card: #241813;
+      --ink: #F5EAE6;
+      --dim: #B8A39C;
+      --line: #3A2823;
+      --accent: #E2604A;
+      --accent-soft: #34211C;
+      color-scheme: dark;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Work Sans', system-ui, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 0 80px;
+  }
+  .kicker {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(30px, 6vw, 40px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  .updated {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--dim);
+    margin-bottom: 36px;
+  }
+  .lede {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 0 0 44px;
+    max-width: 54ch;
+  }
+  section { margin-bottom: 36px; }
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 0 12px;
+  }
+  p {
+    line-height: 1.65;
+    font-size: 15px;
+    margin: 0 0 12px;
+    max-width: 62ch;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin: 0 0 12px;
+  }
+  .card-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .not-list {
+    display: grid;
+    gap: 8px;
+    margin: 0 0 12px;
+  }
+  .not-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 12px 16px;
+    background: var(--accent-soft);
+    border-radius: 10px;
+  }
+  .not-row .x {
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--accent);
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+  .not-row span:last-child { font-size: 14.5px; line-height: 1.5; }
+  hr {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 44px 0 32px;
+  }
+  .contact {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+  }
+  .contact a { color: var(--accent); }
+  footer {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--dim);
+    margin-top: 28px;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="kicker">Privacy Policy</div>
+    <h1>Human, tho</h1>
+    <div class="updated">Last updated September 30, 2026</div>
+
+    <p class="lede">Short version: your voice stays on your phone, your location is optional and never shown to anyone, and we don't have accounts, ads, or analytics to sell you out to in the first place.</p>
+
+    <section>
+      <h2>What the app collects</h2>
+      <div class="card">
+        <div class="card-label">Voice recordings</div>
+        <p>When you record a journal entry, the audio is saved on your device only. It is never uploaded, transmitted, or seen by us.</p>
+      </div>
+      <div class="card">
+        <div class="card-label">Location</div>
+        <p>When you choose to share a glimpse on Our Planet, you can optionally share your location so it can be placed on the map. This is entirely optional — you can share a general area instead of a precise one, and either way, no address or exact coordinates are ever shown to other people. It's used only to place your light.</p>
+      </div>
+      <div class="card">
+        <div class="card-label">Journal entries</div>
+        <p>Your written and recorded entries, mood scores, and streak history are stored locally on your device using standard on-device storage. We don't have a server that holds a copy.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>What we don't do</h2>
+      <div class="not-list">
+        <div class="not-row"><span class="x">—</span><span>No account or sign-in — there's nothing tying your entries to your identity on our end</span></div>
+        <div class="not-row"><span class="x">—</span><span>No analytics or tracking SDKs</span></div>
+        <div class="not-row"><span class="x">—</span><span>No advertising, and no ad networks</span></div>
+        <div class="not-row"><span class="x">—</span><span>We never sell or share your data with third parties</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our Planet</h2>
+      <p>Glimpses you share on Our Planet are anonymous — shown with a general place name, never your name or exact location. Shared glimpses are visible to other people using the app for 24 hours, then removed, unless you choose to save one to your own memories.</p>
+    </section>
+
+    <section>
+      <h2>Your control</h2>
+      <p>You can delete any journal entry, or any saved memory, at any time from within the app. Deleting the app removes everything stored on your device.</p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>Human, tho is not directed at children under 13, and we don't knowingly collect data from children.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If this policy changes, we'll update the date at the top of this page. Continuing to use the app after a change means you accept the updated policy.</p>
+    </section>
+
+    <hr>
+
+    <div class="contact">
+      Questions? Reach us at <a href="mailto:feiyueyi@gmail.com">feiyueyi@gmail.com</a>
+    </div>
+    <footer>Human, tho — com.humantho.app</footer>
+  </div>
+</body>
+</html>
